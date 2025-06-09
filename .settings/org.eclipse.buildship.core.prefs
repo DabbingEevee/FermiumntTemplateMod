@@ -1,0 +1,13 @@
+arguments=
+auto.sync=false
+build.scans.enabled=false
+connection.gradle.distribution=GRADLE_DISTRIBUTION(WRAPPER)
+connection.project.dir=
+eclipse.preferences.version=1
+gradle.user.home=C\:/Program Files/Eclipse Adoptium/jdk-8.0.412.8-hotspot/bin
+java.home=C\:/Program Files/Eclipse Adoptium/jdk-8.0.412.8-hotspot/bin
+jvm.arguments=
+offline.mode=false
+override.workspace.settings=false
+show.console.view=false
+show.executions.view=false

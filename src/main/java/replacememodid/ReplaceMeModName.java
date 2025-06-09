@@ -1,15 +1,15 @@
 package replacememodid;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import replacememodid.handlers.ModRegistry;
 import replacememodid.proxy.CommonProxy;
 
-@Mod(modid = ReplaceMeModName.MODID, version = ReplaceMeModName.VERSION, name = ReplaceMeModName.NAME, dependencies = "required-after:fermiumbooter")
+@Mod(modid = ReplaceMeModName.MODID, version = ReplaceMeModName.VERSION, name = ReplaceMeModName.NAME)
 public class ReplaceMeModName {
     public static final String MODID = "replacememodid";
     public static final String VERSION = "ReplaceMe.Mod.Version";
@@ -24,7 +24,6 @@ public class ReplaceMeModName {
 	
 	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        ModRegistry.init();
         ReplaceMeModName.PROXY.preInit();
     }
 }

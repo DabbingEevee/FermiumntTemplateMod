@@ -6,7 +6,7 @@
   "target": "@env(DEFAULT)",
   "minVersion": "0.8",
   "mixins": [
-    "vanilla.EntityPlayerMixin"
+    "MixinLoaderLateConfigs"
   ],
   "injectors": {
     "maxShiftBy": 10
